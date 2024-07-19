@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<style>
+.center {
+  margin: auto;
+  width: 100%;
+  //border: 3px solid #73AD21;
+  padding: 10px;
+}
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  title:"this will be displayed as a tooltip";
+}
+</style>
+<title>Happy Birthday 10th Jai</title>
+	<body id="body" style="background-color:#f6f902;">
+
+	<h1>Can you guess what opens the door!</h1>
+	<div class="center">
+		<img class="centerImg" src="images/Alohomora.webp" alt="Alohomora" title="Alohomora"/>
+	</div>
+	</br>
+	 <form id="form" method="post" action="harry potter.html" >
+	 <table align="center">
+    <!--tr>
+        <td align="center">Username: </td>
+        <td align="center"><input size=\"20\"
+                   type="text" size="20" maxlength="15"
+                   name="username"></td>
+    </tr-->
+    <tr>
+        <td
+            align="center">Password: </td>
+        <td align="center"><input size=\"20\"
+                   type="password" size="20"
+                   maxlength="15" name="password"></td>
+    </tr>
+    <tr>
+        <td colspan="2"
+            align="center"><input type="submit"
+                                value="Login"></td>
+    </tr>
+</table>
+
+
+	 </form>
+<script>
+function submitHandler(event) {
+  const formData = new FormData(event.target);
+  const password = "Alohomora";
+  if (formData.get("password") === password) {
+	return true;
+  }else{
+	alert('Womp Womp!')
+	}
+  event.preventDefault();
+  return false;
+}
+
+const form = document.getElementById("form");
+form.addEventListener("submit", submitHandler);
+</script>	 
+	</body>
+</html>
