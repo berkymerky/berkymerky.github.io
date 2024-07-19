@@ -1,0 +1,26 @@
+h1 {
+	color: red;
+}
+h2 {
+	color: ;
+	border-color: blue;
+}
+.kyna {
+	color: #D595F3;
+	font-family:verdana;
+	font-size:15px;
+}
+
+.buckaroo {
+	list-style-type:square;
+}
+.hedwig_img {
+	height :125px; 
+	width : 115px;
+	/*style :position:absolute;*/
+	transition: all 3s ease;
+}
+.LLL {
+	height :75px; 
+	width : 75px;
+}
